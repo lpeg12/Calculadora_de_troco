@@ -71,7 +71,7 @@ const App: React.FC = () => {
       </main>
 
       <footer className="mt-12 text-center text-slate-400 text-sm">
-        <p>© {new Date().getFullYear()} Calculadora de Troco Inteligente. Pronto para Vercel.</p>
+        <p>© {new Date().getFullYear()} Calculadora de Troco Inteligente.</p>
       </footer>
     </div>
   );
