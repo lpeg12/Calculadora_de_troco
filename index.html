@@ -13,10 +13,12 @@
             background-color: #f8fafc;
         }
     </style>
-<script type="importmap">
+    <script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@^19.2.3",
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
     "react/": "https://esm.sh/react@^19.2.3/"
   }
@@ -25,5 +27,7 @@
 </head>
 <body>
     <div id="root"></div>
+    <!-- O ponto de entrada principal deve ser declarado explicitamente para ambientes de produção -->
+    <script type="module" src="index.tsx"></script>
 </body>
 </html>

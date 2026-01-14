@@ -1,10 +1,10 @@
 
-import React, { useState, useEffect, useMemo } from 'react';
-import Header from './components/Header';
-import CalculatorForm from './components/CalculatorForm';
-import ResultDisplay from './components/ResultDisplay';
-import { CalculationResult, FacilitationSuggestion } from './types';
-import { calculateBreakdown, getFacilitationSuggestions } from './utils/money';
+import React, { useState, useMemo } from 'react';
+import Header from './components/Header.tsx';
+import CalculatorForm from './components/CalculatorForm.tsx';
+import ResultDisplay from './components/ResultDisplay.tsx';
+import { CalculationResult, FacilitationSuggestion } from './types.ts';
+import { calculateBreakdown, getFacilitationSuggestions } from './utils/money.ts';
 
 const App: React.FC = () => {
   const [totalStr, setTotalStr] = useState('');
@@ -71,7 +71,7 @@ const App: React.FC = () => {
       </main>
 
       <footer className="mt-12 text-center text-slate-400 text-sm">
-        <p>© {new Date().getFullYear()} Calculadora de Troco Inteligente. Desenvolvido para Vercel.</p>
+        <p>© {new Date().getFullYear()} Calculadora de Troco Inteligente. Pronto para Vercel.</p>
       </footer>
     </div>
   );
